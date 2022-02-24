@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{48de06ef-8fc1-4ecb-9943-1c51f80d4909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Button">
+      <UniqueIdentifier>{e95d2510-f308-44bb-a445-1efb2d001b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Resize">
+      <UniqueIdentifier>{40857f0d-8251-4607-abac-9a773fc43507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Excel">
+      <UniqueIdentifier>{feebeb36-1118-4c70-a65f-b8fd992da354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Base64">
+      <UniqueIdentifier>{e53a5c67-f654-4fc1-b4cd-ec88618d741d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\ProgressText">
+      <UniqueIdentifier>{f7e62c69-11ac-4ae0-b0eb-33653542b513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\ColorEdit">
+      <UniqueIdentifier>{9cbc1112-bf4a-4937-a845-145691ccffdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Registry">
+      <UniqueIdentifier>{16515a40-12e9-4573-9688-b51ad8505192}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UpdateGXDNew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateGXDNewDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnST.h">
+      <Filter>Include\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="ThemeHelperST.h">
+      <Filter>Include\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="XPStyleButtonST.h">
+      <Filter>Include\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="EasySize.h">
+      <Filter>Include\Resize</Filter>
+    </ClInclude>
+    <ClInclude Include="msolib.h">
+      <Filter>Include\Excel</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h">
+      <Filter>Include\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="CDownloadFileSever.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMemDCEx.h">
+      <Filter>Include\ProgressText</Filter>
+    </ClInclude>
+    <ClInclude Include="TextProgressCtrl.h">
+      <Filter>Include\ProgressText</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorEdit.h">
+      <Filter>Include\ColorEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>Include\Registry</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UpdateGXDNew.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateGXDNewDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnST.cpp">
+      <Filter>Include\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="ThemeHelperST.cpp">
+      <Filter>Include\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="XPStyleButtonST.cpp">
+      <Filter>Include\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64.cpp">
+      <Filter>Include\Base64</Filter>
+    </ClCompile>
+    <ClCompile Include="CDownloadFileSever.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextProgressCtrl.cpp">
+      <Filter>Include\ProgressText</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorEdit.cpp">
+      <Filter>Include\ColorEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Include\Registry</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UpdateGXDNew.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UpdateGXDNew.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\check.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\close.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\updates.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\images\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Hand.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\UpdateGXDNew.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{93becacf-7296-497c-9d43-eb113ae1fcbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\TrayIcon">
+      <UniqueIdentifier>{04b28f89-7eba-4ea0-a48c-5e12cb9cc3c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\MyTab">
+      <UniqueIdentifier>{66ceff04-c921-4ec8-a12e-b5bc044e5de0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Button">
+      <UniqueIdentifier>{db5ae1dd-242b-48b3-a6ac-97b2f9c421df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FormView">
+      <UniqueIdentifier>{b977c4d3-315b-4940-a7e7-cae3835d5a0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\ListControl">
+      <UniqueIdentifier>{dd47ddf9-98a2-42e9-a602-ab111e10d923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Images">
+      <UniqueIdentifier>{d5e03f6c-627b-419c-a428-936f1b280c83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Function">
+      <UniqueIdentifier>{8c4b68ba-30ce-4621-a717-24db5131d15a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\BaseEx">
+      <UniqueIdentifier>{cf6a661d-e4b1-40a3-9a5d-86bc740f2f11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\FileFinder">
+      <UniqueIdentifier>{0b800b93-e144-4344-8a37-f2a1ca0903bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\FindFiles">
+      <UniqueIdentifier>{e8fdb3f7-5365-4f7c-b8fe-498b0d2123c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\EditText">
+      <UniqueIdentifier>{ce1ebd5a-cb84-463d-a3d7-f8e079df9acc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\MenuIcon">
+      <UniqueIdentifier>{134677f1-1208-457e-89c8-aef429866146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\NumSpin">
+      <UniqueIdentifier>{dd77f553-e821-4cbb-a54c-5c8e2c390ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Progress">
+      <UniqueIdentifier>{77e6f9cc-19fe-4c29-a076-6649f6a02513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Registry">
+      <UniqueIdentifier>{7904e062-b085-4f0b-885a-83fadf960279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Resize">
+      <UniqueIdentifier>{d764ee5d-4761-4f13-8f55-430d98ee0432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Files">
+      <UniqueIdentifier>{0364e005-332b-43a2-84a5-d6f53530443f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\HookMouse">
+      <UniqueIdentifier>{f69d2d29-0bb4-4fdf-8d91-3ee782299816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class">
+      <UniqueIdentifier>{22555586-4c46-4d50-bbf0-2dc119ac77d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form">
+      <UniqueIdentifier>{2fc4d888-fd7d-49ba-bebb-ec5a59f80c1c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GFilesManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GFilesManagerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrayIcon.h">
+      <Filter>Include\TrayIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="TrayIconMouseMsgHandler.h">
+      <Filter>Include\TrayIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="IconData.h">
+      <Filter>Include\TrayIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseMsgHandlerImpl.h">
+      <Filter>Include\TrayIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Include\TrayIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTabCtrl.h">
+      <Filter>Include\MyTab</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnST.h">
+      <Filter>Include\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="ThemeHelperST.h">
+      <Filter>Include\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="XPStyleButtonST.h">
+      <Filter>Include\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="FTab1.h">
+      <Filter>FormView</Filter>
+    </ClInclude>
+    <ClInclude Include="FTab2.h">
+      <Filter>FormView</Filter>
+    </ClInclude>
+    <ClInclude Include="FTab3.h">
+      <Filter>FormView</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlEx.h">
+      <Filter>Include\ListControl</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgHook.h">
+      <Filter>Include\ListControl</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHelper.h">
+      <Filter>Include\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="FileRegister.h">
+      <Filter>Include\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="SysImageList.h">
+      <Filter>Include\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>Function</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h">
+      <Filter>Include\BaseEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Path.h">
+      <Filter>Include\FileFinder</Filter>
+    </ClInclude>
+    <ClInclude Include="FileFinder.h">
+      <Filter>Include\FileFinder</Filter>
+    </ClInclude>
+    <ClInclude Include="BrowseForFolder.h">
+      <Filter>Include\FindFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Include\FindFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorEdit.h">
+      <Filter>Include\EditText</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuIcon.h">
+      <Filter>Include\MenuIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="NumSpinCtrl.h">
+      <Filter>Include\NumSpin</Filter>
+    </ClInclude>
+    <ClInclude Include="TextProgressCtrl.h">
+      <Filter>Include\Progress</Filter>
+    </ClInclude>
+    <ClInclude Include="CMemDCEx.h">
+      <Filter>Include\Progress</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>Include\Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="EasySize.h">
+      <Filter>Include\Resize</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiFileOpenDialog.h">
+      <Filter>Include\Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HookMouse.h">
+      <Filter>Include\HookMouse</Filter>
+    </ClInclude>
+    <ClInclude Include="CCheckVersion.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="CDownloadFileSever.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CRegistryContextMenu.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgOptionMain.h">
+      <Filter>Form</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GFilesManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFilesManagerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrayIcon.cpp">
+      <Filter>Include\TrayIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTabCtrl.cpp">
+      <Filter>Include\MyTab</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnST.cpp">
+      <Filter>Include\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="ThemeHelperST.cpp">
+      <Filter>Include\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="XPStyleButtonST.cpp">
+      <Filter>Include\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="FTab3.cpp">
+      <Filter>FormView</Filter>
+    </ClCompile>
+    <ClCompile Include="FTab1.cpp">
+      <Filter>FormView</Filter>
+    </ClCompile>
+    <ClCompile Include="FTab2.cpp">
+      <Filter>FormView</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlEx.cpp">
+      <Filter>Include\ListControl</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgHook.cpp">
+      <Filter>Include\ListControl</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHelper.cpp">
+      <Filter>Include\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="FileRegister.cpp">
+      <Filter>Include\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="SysImageList.cpp">
+      <Filter>Include\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>Function</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64.cpp">
+      <Filter>Include\BaseEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Path.cpp">
+      <Filter>Include\FileFinder</Filter>
+    </ClCompile>
+    <ClCompile Include="FileFinder.cpp">
+      <Filter>Include\FileFinder</Filter>
+    </ClCompile>
+    <ClCompile Include="BrowseForFolder.cpp">
+      <Filter>Include\FindFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Include\FindFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorEdit.cpp">
+      <Filter>Include\EditText</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuIcon.cpp">
+      <Filter>Include\MenuIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="NumSpinCtrl.cpp">
+      <Filter>Include\NumSpin</Filter>
+    </ClCompile>
+    <ClCompile Include="TextProgressCtrl.cpp">
+      <Filter>Include\Progress</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Include\Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiFileOpenDialog.cpp">
+      <Filter>Include\Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HookMouse.cpp">
+      <Filter>Include\HookMouse</Filter>
+    </ClCompile>
+    <ClCompile Include="CCheckVersion.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="CDownloadFileSever.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CRegistryContextMenu.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgOptionMain.cpp">
+      <Filter>Form</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GFilesManager.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\GFilesManager.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_add_new.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_close_window.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_delete.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Hand.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\close_window_1_Wia_icon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\close_window_2_se2_icon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\close_window_1_CLA_icon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\close_window_2_6o5_icon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\add.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\delete.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\open_book.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\opened_folder.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\shortcut.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_plus_math.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\96_bzT_icon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_tasks.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_form.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_home_page.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_color_wheel.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_drop_down.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_synchronize.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_up_squared.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\drag_box.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\drag_multi.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_gear.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_automatic.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_automatic2.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon_system.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon_system2.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Dutoan.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\dutoan_cK7_icon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\update1_elI_icon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\update1_ZqJ_icon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\check.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\close.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\file_null.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\GFilesManager.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

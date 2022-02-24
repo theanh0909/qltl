@@ -1,0 +1,5 @@
+LIBRARY 'GUSers.dll'
+EXPORTS
+	GUSersNull
+	GetDecentralization
+    

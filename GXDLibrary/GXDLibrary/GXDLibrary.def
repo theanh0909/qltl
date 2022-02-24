@@ -1,0 +1,3 @@
+﻿LIBRARY "GXDLibrary.dll"
+EXPORTS
+	InitGXDLibrary					; Hàm khởi tạo DLL

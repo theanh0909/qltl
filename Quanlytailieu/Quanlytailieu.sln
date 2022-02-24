@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quanlytailieu", "Quanlytailieu\Quanlytailieu.vcxproj", "{59A459AF-0532-4D1D-9113-E5961388B90C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59A459AF-0532-4D1D-9113-E5961388B90C}.Debug|x64.ActiveCfg = Debug|x64
+		{59A459AF-0532-4D1D-9113-E5961388B90C}.Debug|x64.Build.0 = Debug|x64
+		{59A459AF-0532-4D1D-9113-E5961388B90C}.Debug|x86.ActiveCfg = Debug|Win32
+		{59A459AF-0532-4D1D-9113-E5961388B90C}.Debug|x86.Build.0 = Debug|Win32
+		{59A459AF-0532-4D1D-9113-E5961388B90C}.Release|x64.ActiveCfg = Release|x64
+		{59A459AF-0532-4D1D-9113-E5961388B90C}.Release|x64.Build.0 = Release|x64
+		{59A459AF-0532-4D1D-9113-E5961388B90C}.Release|x86.ActiveCfg = Release|Win32
+		{59A459AF-0532-4D1D-9113-E5961388B90C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B39338F6-F53D-4ACF-9E7E-E69BBB76B7F6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,4 @@
+﻿LIBRARY "GXDUpdateInfo.dll"
+EXPORTS
+	InitGXDUpdateInfo				; Hàm khởi tạo DLL
+	CallGXDUpdateInfo				; Hiển thị hộp thoại cập nhật thông tin khách hàng

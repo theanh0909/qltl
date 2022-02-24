@@ -1,0 +1,11 @@
+LIBRARY "GHookForm"
+EXPORTS
+	MyHookKeyboard
+	SetGlobalHookHandle
+	CallFrmTieuchuan
+	CallFrmQuytrinh
+	CallFrmChiphi
+	CallDownloadQuytrinh
+	CallOpenURLPhaply
+SECTIONS
+SHARED_DATA Read Write Shared

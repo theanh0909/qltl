@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="1.Define">
+      <UniqueIdentifier>{986aa790-8737-416d-9a4e-871dd8487475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.StdAfx">
+      <UniqueIdentifier>{45fdd950-1755-44ad-a9be-96d03ad5cb2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4.Form">
+      <UniqueIdentifier>{30be3761-89b7-46c6-b1db-ad871cc7cd48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5.Class">
+      <UniqueIdentifier>{bec12e2b-101a-4c89-94bd-9085d00b024a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6.Include">
+      <UniqueIdentifier>{5d8f8e31-fed9-4776-b99d-bb0f43d49b51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3.Function">
+      <UniqueIdentifier>{3ebbbb42-9f0d-46e1-9a7b-4a2e6dd14dda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6.Include\Excel">
+      <UniqueIdentifier>{ffa32a48-b69c-4c38-8ddc-c4acf09caf39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6.Include\SQL">
+      <UniqueIdentifier>{8aaa0b7c-9f08-4ad9-b3d2-7b41b21cbdd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6.Include\Registry">
+      <UniqueIdentifier>{5759db43-3f76-496d-949d-1ed60c69fbb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6.Include\Files">
+      <UniqueIdentifier>{6acfe9f2-7ef3-492a-aea0-fa24c9e93343}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CFunction.cpp">
+      <Filter>3.Function</Filter>
+    </ClCompile>
+    <ClCompile Include="GXDLibrary.cpp">
+      <Filter>1.Define</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>2.StdAfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>6.Include\Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="BrowseForFolder.cpp">
+      <Filter>6.Include\Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>6.Include\Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileFinder.cpp">
+      <Filter>6.Include\Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Path.cpp">
+      <Filter>6.Include\Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\GXDLibrary.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="GXDLibrary.def">
+      <Filter>1.Define</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CFunction.h">
+      <Filter>3.Function</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>1.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>1.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>1.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="GXDLibrary.h">
+      <Filter>1.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>2.StdAfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.h">
+      <Filter>6.Include\SQL</Filter>
+    </ClInclude>
+    <ClInclude Include="msolib.h">
+      <Filter>6.Include\Excel</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>6.Include\Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="BrowseForFolder.h">
+      <Filter>6.Include\Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>6.Include\Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileFilter.h">
+      <Filter>6.Include\Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileFinder.h">
+      <Filter>6.Include\Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Path.h">
+      <Filter>6.Include\Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GXDLibrary.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

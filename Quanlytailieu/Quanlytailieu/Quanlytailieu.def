@@ -1,0 +1,64 @@
+﻿LIBRARY "GDocmanager.dll"
+
+EXPORTS
+	DLLStart					; Khởi tạo dll
+	
+	EventEnter					; Sự kiện nhấn Enter
+	EventRightClick				; Sự kiện click chuột phải
+
+	CallOptionMain				; Gọi hộp thoại tùy chọn chính
+	CallCreateNewSheet			; Tạo sheet mẫu mới
+	CallCreateDirStructure		; Tạo cấu trúc thư mục mẫu
+
+	CallFontUpper				; Hàm đổi chữ thành chữ HOA
+	CallFontLower				; Hàm đổi thành chữ thường
+	CallFontProper				; Hàm đổi ký tự đầu tiên mỗi từ thành chữ HOA
+	CallFontUppro				; Hàm đổi ký tự đầu tiên mỗi câu thành chữ HOA
+	CallFontUnsigned			; Hàm chuyển đổi chuỗi thành không dấu
+	CallFontReverse				; Hàm đảo ngược chuỗi
+		
+	CallQManaSheet				; Hàm quản lý bảng tính
+	CallQAutoSheet				; Hàm mở rộng toàn bộ sheet
+	CallQAutoFilter				; Hàm tự động auto-filter
+	CallQFreezePanes			; Hàm cố định vị trí (free hoặc split)
+	CallQViewFormula			; Hàm quản lý công thức
+	CallQFocus					; Hàm quay lại thao tác cũ
+
+	CallFuncUpdateFiles			; Funct - Cập nhật dữ liệu mới
+	CallFuncAddFiles			; Funct - Thêm mới dữ liệu
+	CallFuncCopyData			; Funct - Sao chép / di chuyển dữ liệu
+	CallFuncCheckFiles			; Funct - Check files tồn tại hay không
+	CallFuncQuickSort			; Funct - Sắp xếp lại dữ liệu
+
+	CallFuncRenameFiles			; Funct - Hỗ trợ đổi tên files
+	CallFuncRenameFolders		; Funct - Hỗ trợ đổi tên thư mục
+	CallFuncAutoRename			; Funct - Hỗ trợ tự động đổi tên nâng cao
+	CallFuncCheckHyperlink		; Funct - Hỗ trợ kiểm tra đường dẫn liên kết lỗi
+	CallFuncChangeHyperlink		; Funct - Hỗ trợ thay đổi đường dẫn liên kết
+
+	CallOnChangeFuncTimkiem		; Search - Hàm tìm kiếm dữ liệu trực tiếp trên Editbox Ribbon
+	CallClickBtnFuncTimkiem		; Search - Hàm nhấn nút button để tìm kiếm dữ liệu
+
+	CallUtilCreateGroups		; Utility - Tạo nhóm (groups) các files
+	CallUtilEditProperties		; Utility - Chỉnh sửa thông tin files dữ liệu
+
+	CallHelpUM					; Help - Hướng dẫn sử dụng
+	CallHelpFAQ					; Help - Câu hỏi thường gặp
+	CallHelpVideo				; Help - Video HDSD
+	CallHelpForum				; Help - Diễn đàn Giá Xây Dựng
+	CallHelpSoft				; Help - Thông tin phần mềm
+	CallHelpSupport				; Help - Hỗ trợ trực tuyến
+	CallHelpFeedback			; Help - Phản hồi, góp ý
+
+	CallNewCheckVersion			; News - Kiểm tra phiên bản và cập nhật
+	CallNewInfoVersion			; News - Thông tin phiên bản
+	CallNewSupportGXD			; News - Tổng đài hỗ trợ 1900.0147
+
+	CallInsertRow				; RightClick - Chèn thêm dòng
+	CallAutoNumber				; RightClick - Tự động đánh lại số thứ tự
+	CallRenameFiles				; RightClick - Thay đổi tên và thông tin files
+	CallCopyFiles				; RightClick - Sao chép files đến thư mục được chỉ định
+	CallMoveFiles				; RightClick - Di chuyển files đến thư mục được chỉ định
+	CallOpenFile				; RightClick - Mở file được chọn 
+	CallOpenFolder				; RightClick - Mở thư mục chứa file	
+	CallDeleteFiles				; RightClick - Xóa các files được chọn

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{717ae8f1-6438-4a5c-a950-a7057d2bec7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\HardDisk">
+      <UniqueIdentifier>{50f2697f-55f0-4328-80af-e60baf42c454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Base64">
+      <UniqueIdentifier>{7cffbe1a-e675-404a-a815-82d9754f6c20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Registry">
+      <UniqueIdentifier>{3a7df355-a479-4475-bb37-f1197c531101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Function">
+      <UniqueIdentifier>{43245ef4-f747-4223-8079-b6127754b0ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GUsers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="diskid32.cpp">
+      <Filter>Include\HardDisk</Filter>
+    </ClCompile>
+    <ClCompile Include="HardDisk.cpp">
+      <Filter>Include\HardDisk</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64.cpp">
+      <Filter>Include\Base64</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Include\Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>Function</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GUsers.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\GUsers.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUsers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="diskid32.h">
+      <Filter>Include\HardDisk</Filter>
+    </ClInclude>
+    <ClInclude Include="HardDisk.h">
+      <Filter>Include\HardDisk</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h">
+      <Filter>Include\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>Include\Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>Function</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GUsers.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

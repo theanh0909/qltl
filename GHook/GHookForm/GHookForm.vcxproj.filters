@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="1. Main">
+      <UniqueIdentifier>{3706c620-f78e-4619-99c1-d41062446a40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Function">
+      <UniqueIdentifier>{ab071f28-51f2-4556-978d-1b01248db5a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Class">
+      <UniqueIdentifier>{8cc68fec-fa1d-4b6e-b4ae-e9a4e6429d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. Form">
+      <UniqueIdentifier>{80cb243d-cbfc-48b2-a4cb-bf5d27008c67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include">
+      <UniqueIdentifier>{e2f7eea4-f8d2-40c5-85d7-813b865e3a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Excel">
+      <UniqueIdentifier>{441d9f1b-82d9-468a-86af-140f37708acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\SendKeys">
+      <UniqueIdentifier>{c964c5b0-dcae-453e-9369-3355cc36aa7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\HookMouse">
+      <UniqueIdentifier>{8d3e3eaa-729e-4a89-8ae9-b3db4c522e8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\EditText">
+      <UniqueIdentifier>{78e7fd1a-ec44-4fea-82df-126220718e93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\BaseEx">
+      <UniqueIdentifier>{731b4490-b21a-48b0-b7f5-aa51caecf754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\ListControl">
+      <UniqueIdentifier>{802ad3f4-611b-484d-9129-3c6a91752735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Images">
+      <UniqueIdentifier>{fa0953be-9c45-4839-8a2f-97c373b1e2ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Database">
+      <UniqueIdentifier>{5d35b5f5-2b7b-4c50-bb9e-52bf18bb049a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Main\PCH">
+      <UniqueIdentifier>{32be308a-6ef8-4017-a0f7-94a6c6b84655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Registry">
+      <UniqueIdentifier>{041ea9ef-dabe-4023-8084-bb990ed10a38}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>1. Main\PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="HookMouse.cpp">
+      <Filter>5. Include\HookMouse</Filter>
+    </ClCompile>
+    <ClCompile Include="SendKeys.cpp">
+      <Filter>5. Include\SendKeys</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmTieuchuan.cpp">
+      <Filter>4. Form</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorEdit.cpp">
+      <Filter>5. Include\EditText</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>2. Function</Filter>
+    </ClCompile>
+    <ClCompile Include="CDownloadFileSever.cpp">
+      <Filter>3. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64.cpp">
+      <Filter>5. Include\BaseEx</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlEx.cpp">
+      <Filter>5. Include\ListControl</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgHook.cpp">
+      <Filter>5. Include\ListControl</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHelper.cpp">
+      <Filter>5. Include\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="FileRegister.cpp">
+      <Filter>5. Include\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="SysImageList.cpp">
+      <Filter>5. Include\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="GHookForm.cpp">
+      <Filter>1. Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>5. Include\Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmQuytrinh.cpp">
+      <Filter>4. Form</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmChiphi.cpp">
+      <Filter>4. Form</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\GHookForm.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="GHookForm.def">
+      <Filter>1. Main</Filter>
+    </None>
+    <None Include="..\..\GHookForm\GHookForm\res\icons8_search.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\GHookForm\GHookForm\res\icons8_download.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons8_download.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons8_search.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>1. Main\PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="msolib.h">
+      <Filter>5. Include\Excel</Filter>
+    </ClInclude>
+    <ClInclude Include="HookMouse.h">
+      <Filter>5. Include\HookMouse</Filter>
+    </ClInclude>
+    <ClInclude Include="SendKeys.h">
+      <Filter>5. Include\SendKeys</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmTieuchuan.h">
+      <Filter>4. Form</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorEdit.h">
+      <Filter>5. Include\EditText</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>2. Function</Filter>
+    </ClInclude>
+    <ClInclude Include="CDownloadFileSever.h">
+      <Filter>3. Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h">
+      <Filter>5. Include\BaseEx</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlEx.h">
+      <Filter>5. Include\ListControl</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgHook.h">
+      <Filter>5. Include\ListControl</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHelper.h">
+      <Filter>5. Include\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="FileRegister.h">
+      <Filter>5. Include\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="SysImageList.h">
+      <Filter>5. Include\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.h">
+      <Filter>5. Include\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>1. Main</Filter>
+    </ClInclude>
+    <ClInclude Include="GHookForm.h">
+      <Filter>1. Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>5. Include\Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmQuytrinh.h">
+      <Filter>4. Form</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmChiphi.h">
+      <Filter>4. Form</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GHookForm.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

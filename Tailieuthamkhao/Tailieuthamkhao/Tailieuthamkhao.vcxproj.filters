@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{b3bb9f17-b0f7-4cc3-a2d6-849d3f2dbb28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{09d5cc05-e25d-4d4c-8556-179942618ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Default">
+      <UniqueIdentifier>{ae5ecf2c-5378-4bd1-b479-1ef101936c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Database">
+      <UniqueIdentifier>{74061bea-6f86-4683-abd4-ae124ad265f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Excel">
+      <UniqueIdentifier>{947725ae-a0bd-460d-a5de-074f7e379672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\BaseEx">
+      <UniqueIdentifier>{62baba7b-4608-465b-bf04-de09d12151f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\ResizeDialog">
+      <UniqueIdentifier>{bc0424f8-c602-4ac2-88d8-014eea45c0ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Listcontrol">
+      <UniqueIdentifier>{6067edfb-8f91-420a-a4b2-5022114639ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Button">
+      <UniqueIdentifier>{7d0916e0-efb5-4e74-8746-0323ab7b4eef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\EditText">
+      <UniqueIdentifier>{9c518363-fffa-4abd-b2d1-dc59071d1fd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Combobox">
+      <UniqueIdentifier>{1aac29b1-5c61-4a69-a94e-a53445852f09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Images">
+      <UniqueIdentifier>{6658afda-2031-4c22-8b45-e3d92e2e4d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Default\StdAfx">
+      <UniqueIdentifier>{a766a3f3-20e9-4c00-8e1b-4aba8b217f7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Default\Function">
+      <UniqueIdentifier>{f5612bfd-fbdd-4d97-88de-24af99178617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\MenuIcon">
+      <UniqueIdentifier>{a8831bee-79a3-4dfc-b188-31c40e887faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Registry">
+      <UniqueIdentifier>{22cb8d4e-a85d-4ef8-902b-f05651364562}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tailieuthamkhao.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64.cpp">
+      <Filter>Include\BaseEx</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmTailieuthamkhao.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlEx.cpp">
+      <Filter>Include\Listcontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgHook.cpp">
+      <Filter>Include\Listcontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboBoxExt.cpp">
+      <Filter>Include\Combobox</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboBoxExtList.cpp">
+      <Filter>Include\Combobox</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnST.cpp">
+      <Filter>Include\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorEdit.cpp">
+      <Filter>Include\EditText</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHelper.cpp">
+      <Filter>Include\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="FileRegister.cpp">
+      <Filter>Include\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="SysImageList.cpp">
+      <Filter>Include\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>Default\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Default\StdAfx</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmCheckRobot.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuIcon.cpp">
+      <Filter>Include\MenuIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="XPStyleButtonST.cpp">
+      <Filter>Include\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="ThemeHelperST.cpp">
+      <Filter>Include\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Include\Registry</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tailieuthamkhao.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\Tailieuthamkhao.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ico\close.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ico\download.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ico\folder.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ico\search.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\bmp\check_key.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ico\robot.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ico\check.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ico\reset.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ico\copy.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ico\download_basic.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ico\edit_file.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ico\view_file.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon\close.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon\download.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon\search.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon\robot.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon\check.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon\reset.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon\folder.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon\copy.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon\download_basic.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon\edit_file.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icon\view_file.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Hand.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tailieuthamkhao.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="msolib.h">
+      <Filter>Include\Excel</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h">
+      <Filter>Include\BaseEx</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmTailieuthamkhao.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="EasySize.h">
+      <Filter>Include\ResizeDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlEx.h">
+      <Filter>Include\Listcontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgHook.h">
+      <Filter>Include\Listcontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboBoxExt.h">
+      <Filter>Include\Combobox</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboBoxExtList.h">
+      <Filter>Include\Combobox</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnST.h">
+      <Filter>Include\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorEdit.h">
+      <Filter>Include\EditText</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHelper.h">
+      <Filter>Include\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="FileRegister.h">
+      <Filter>Include\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="SysImageList.h">
+      <Filter>Include\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="Hotkey.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>Default\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.h">
+      <Filter>Include\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="StrUtil.h">
+      <Filter>Include\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Default\StdAfx</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmCheckRobot.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuIcon.h">
+      <Filter>Include\MenuIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="XPStyleButtonST.h">
+      <Filter>Include\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="ThemeHelperST.h">
+      <Filter>Include\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>Include\Registry</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Tailieuthamkhao.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Images\icon\download_w10.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Images\icon\open_folder.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

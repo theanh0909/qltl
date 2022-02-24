@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="2. Functions">
+      <UniqueIdentifier>{76429014-f5f3-433d-ac40-1b159371fb9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Dialog">
+      <UniqueIdentifier>{55ce25a5-e2f2-47d1-ba7e-3ec732f15e4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4. Class">
+      <UniqueIdentifier>{fdca6c19-8988-4f8f-91ce-18d6a3ce05c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include">
+      <UniqueIdentifier>{b576fe35-96a8-4c96-8928-88f5c33dcb4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Excel">
+      <UniqueIdentifier>{fdaea667-f593-48db-8e53-0257be327a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Source">
+      <UniqueIdentifier>{aa3cc55d-e9fc-4330-a9d0-1358a246392c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\FileFinder">
+      <UniqueIdentifier>{005368ed-36ea-49c1-a21c-bf2dc497a90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Button">
+      <UniqueIdentifier>{ee18132d-cfd4-4ac0-b748-24fb15436c3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Resize">
+      <UniqueIdentifier>{7949d6ce-23f0-48e8-a429-a741c5566503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Registry">
+      <UniqueIdentifier>{2f4023d0-1899-47c9-bf75-6db221678e07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\BaseEx">
+      <UniqueIdentifier>{d55e509f-068b-4795-ba5f-2d879fe361a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Listcontrol">
+      <UniqueIdentifier>{bf40d3ba-9cc2-46bd-850c-c95211f2dfb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Images">
+      <UniqueIdentifier>{40deb473-86f1-49b7-b007-1717a7bbc7fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\EditText">
+      <UniqueIdentifier>{748e1016-1eb4-4b76-b3db-6530f3d2c87d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Progress">
+      <UniqueIdentifier>{3b818044-e1fc-4e39-95aa-014c47953470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\FindFiles">
+      <UniqueIdentifier>{7fcf4dc5-4f92-468a-88a4-479246aea723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\MenuIcon">
+      <UniqueIdentifier>{077eeba4-339f-4294-9ff1-9a17159a4074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\NumSpin">
+      <UniqueIdentifier>{0d349ff7-798a-4dbf-a76e-e71cc497eaf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Picture">
+      <UniqueIdentifier>{32a8622c-1d18-4e66-8c6a-6697da553398}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\TaskbarNotifier">
+      <UniqueIdentifier>{db384cc2-cb7f-4ed0-bae2-49911bc2b0ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Treeview">
+      <UniqueIdentifier>{a227e7f4-efc1-4e08-b0af-278cfc0018a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\FileFilter">
+      <UniqueIdentifier>{982ef24c-2520-4e61-aa0e-3a7700bbaeb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Splitter">
+      <UniqueIdentifier>{b2df84b4-c2b2-4d02-9f1f-3b87bafe2fab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Dialog\TabView">
+      <UniqueIdentifier>{4ce677c9-533f-4068-99c0-d132f4e42393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Include\Combobox">
+      <UniqueIdentifier>{dda53068-643a-4efb-a9e6-2f5da0566365}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>1. Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>2. Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="FileFinder.cpp">
+      <Filter>5. Include\FileFinder</Filter>
+    </ClCompile>
+    <ClCompile Include="Path.cpp">
+      <Filter>5. Include\FileFinder</Filter>
+    </ClCompile>
+    <ClCompile Include="CReadFileCSV.cpp">
+      <Filter>4. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnST.cpp">
+      <Filter>5. Include\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="ThemeHelperST.cpp">
+      <Filter>5. Include\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="XPStyleButtonST.cpp">
+      <Filter>5. Include\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgListUpdate.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgOptionMain.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Quanlytailieu.cpp">
+      <Filter>1. Source</Filter>
+    </ClCompile>
+    <ClCompile Include="CHelpRibbon.cpp">
+      <Filter>4. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>5. Include\Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64.cpp">
+      <Filter>5. Include\BaseEx</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlEx.cpp">
+      <Filter>5. Include\Listcontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgHook.cpp">
+      <Filter>5. Include\Listcontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHelper.cpp">
+      <Filter>5. Include\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="FileRegister.cpp">
+      <Filter>5. Include\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="SysImageList.cpp">
+      <Filter>5. Include\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorEdit.cpp">
+      <Filter>5. Include\EditText</Filter>
+    </ClCompile>
+    <ClCompile Include="TextProgressCtrl.cpp">
+      <Filter>5. Include\Progress</Filter>
+    </ClCompile>
+    <ClCompile Include="CDownloadFileSever.cpp">
+      <Filter>4. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCopyData.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="BrowseForFolder.cpp">
+      <Filter>5. Include\FindFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>5. Include\FindFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAddFiles.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuIcon.cpp">
+      <Filter>5. Include\MenuIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="CCheckVersion.cpp">
+      <Filter>4. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCheckFiles.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRibbonTimkiem.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="NumSpinCtrl.cpp">
+      <Filter>5. Include\NumSpin</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgInsertRows.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureCtrl.cpp">
+      <Filter>5. Include\Picture</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskbarNotifier.cpp">
+      <Filter>5. Include\TaskbarNotifier</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCreateNewTemp.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRenameFiles.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCreateFroups.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgChangeHyperlink.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CQSortData.cpp">
+      <Filter>4. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="CCheckHyperlinkError.cpp">
+      <Filter>4. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="CMoveFiles.cpp">
+      <Filter>4. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="ColumnTreeCtrl.cpp">
+      <Filter>5. Include\Treeview</Filter>
+    </ClCompile>
+    <ClCompile Include="ColumnTreeView.cpp">
+      <Filter>5. Include\Treeview</Filter>
+    </ClCompile>
+    <ClCompile Include="ColumnTreeWnd.cpp">
+      <Filter>5. Include\Treeview</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStructureFolder.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CRenameFolders.cpp">
+      <Filter>4. Class</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgEditProperties.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="SplitterControl.cpp">
+      <Filter>5. Include\Splitter</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSelectionCells.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmTabAdd.cpp">
+      <Filter>3. Dialog\TabView</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmTabDelete.cpp">
+      <Filter>3. Dialog\TabView</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmTabKhac.cpp">
+      <Filter>3. Dialog\TabView</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmTabReplace.cpp">
+      <Filter>3. Dialog\TabView</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmTabSTT.cpp">
+      <Filter>3. Dialog\TabView</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAutoRename.cpp">
+      <Filter>3. Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboBoxExt.cpp">
+      <Filter>5. Include\Combobox</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboBoxExtList.cpp">
+      <Filter>5. Include\Combobox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\dutoan.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\check.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\close.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Hand.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Quanlytailieu.def">
+      <Filter>1. Source</Filter>
+    </None>
+    <None Include="res\Quanlytailieu.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\pause.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\search.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\add.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\copy.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\delete.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\move.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\open_book.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\opened_folder.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\send_mail.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\send_back.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\arrow.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\updates.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\gear.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\addlist.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\compare.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\todolist.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\notifier.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\newfile.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\renamefile.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\folder_tree.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\question.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\shortcut.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\support.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\addlist2.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\add_file2.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\rename.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\flow_chart.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_file.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\tree_structure.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_edit_property.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_copy_to_clipboard.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\down_button.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\save_all.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\slide_up.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\broom.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\down_squared.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\up_squared.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\file_null.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\data_transfer.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_synchronize.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\redo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\undo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\icons8_checkmark.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>1. Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>2. Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="msolib.h">
+      <Filter>5. Include\Excel</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>1. Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>1. Source</Filter>
+    </ClInclude>
+    <ClInclude Include="FileFinder.h">
+      <Filter>5. Include\FileFinder</Filter>
+    </ClInclude>
+    <ClInclude Include="Path.h">
+      <Filter>5. Include\FileFinder</Filter>
+    </ClInclude>
+    <ClInclude Include="CReadFileCSV.h">
+      <Filter>4. Class</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnST.h">
+      <Filter>5. Include\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="ThemeHelperST.h">
+      <Filter>5. Include\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="XPStyleButtonST.h">
+      <Filter>5. Include\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgListUpdate.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgOptionMain.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Quanlytailieu.h">
+      <Filter>1. Source</Filter>
+    </ClInclude>
+    <ClInclude Include="CHelpRibbon.h">
+      <Filter>4. Class</Filter>
+    </ClInclude>
+    <ClInclude Include="EasySize.h">
+      <Filter>5. Include\Resize</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>5. Include\Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h">
+      <Filter>5. Include\BaseEx</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlEx.h">
+      <Filter>5. Include\Listcontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgHook.h">
+      <Filter>5. Include\Listcontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHelper.h">
+      <Filter>5. Include\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="FileRegister.h">
+      <Filter>5. Include\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="SysImageList.h">
+      <Filter>5. Include\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorEdit.h">
+      <Filter>5. Include\EditText</Filter>
+    </ClInclude>
+    <ClInclude Include="CMemDCEx.h">
+      <Filter>5. Include\Progress</Filter>
+    </ClInclude>
+    <ClInclude Include="TextProgressCtrl.h">
+      <Filter>5. Include\Progress</Filter>
+    </ClInclude>
+    <ClInclude Include="CDownloadFileSever.h">
+      <Filter>4. Class</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCopyData.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="BrowseForFolder.h">
+      <Filter>5. Include\FindFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>5. Include\FindFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAddFiles.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuIcon.h">
+      <Filter>5. Include\MenuIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="CCheckVersion.h">
+      <Filter>4. Class</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRibbonTimkiem.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCheckFiles.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="NumSpinCtrl.h">
+      <Filter>5. Include\NumSpin</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgInsertRows.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="PictureCtrl.h">
+      <Filter>5. Include\Picture</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskbarNotifier.h">
+      <Filter>5. Include\TaskbarNotifier</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCreateNewTemp.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRenameFiles.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCreateFroups.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgChangeHyperlink.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="CQSortData.h">
+      <Filter>4. Class</Filter>
+    </ClInclude>
+    <ClInclude Include="CCheckHyperlinkError.h">
+      <Filter>4. Class</Filter>
+    </ClInclude>
+    <ClInclude Include="CMoveFiles.h">
+      <Filter>4. Class</Filter>
+    </ClInclude>
+    <ClInclude Include="ColumnTreeCtrl.h">
+      <Filter>5. Include\Treeview</Filter>
+    </ClInclude>
+    <ClInclude Include="ColumnTreeView.h">
+      <Filter>5. Include\Treeview</Filter>
+    </ClInclude>
+    <ClInclude Include="ColumnTreeWnd.h">
+      <Filter>5. Include\Treeview</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStructureFolder.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="FileFilter.h">
+      <Filter>5. Include\FileFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="CRenameFolders.h">
+      <Filter>4. Class</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgEditProperties.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="SplitterControl.h">
+      <Filter>5. Include\Splitter</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSelectionCells.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmTabAdd.h">
+      <Filter>3. Dialog\TabView</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmTabKhac.h">
+      <Filter>3. Dialog\TabView</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmTabDelete.h">
+      <Filter>3. Dialog\TabView</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmTabReplace.h">
+      <Filter>3. Dialog\TabView</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmTabSTT.h">
+      <Filter>3. Dialog\TabView</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAutoRename.h">
+      <Filter>3. Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboBoxExt.h">
+      <Filter>5. Include\Combobox</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboBoxExtList.h">
+      <Filter>5. Include\Combobox</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Quanlytailieu.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

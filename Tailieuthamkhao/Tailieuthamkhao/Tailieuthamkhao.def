@@ -1,0 +1,6 @@
+﻿LIBRARY "Tailieuthamkhao.dll"
+EXPORTS
+	CallOpenTailieuthamkhaoDLL			; Hàm khởi động khi mở file DLL
+	OpenFrmDownloadTailieu				; Hàm mở hộp thoại tải tài liệu
+
+

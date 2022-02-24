@@ -1,0 +1,93 @@
+Windows Registry Editor Version 5.00
+
+; Register for COM interop Test
+; Created by: Leokiri
+; Created on: 24/08/2020
+
+; Class 		(CLSID)		= HKEY_CLASSES_ROOT\CLSID\{3a3f738d-238f-3a8a-82b6-d5bdcdf4ddb1}		[default]
+; Interface 	(IID)		= HKEY_CLASSES_ROOT\Interface\{1c548269-a209-3239-9685-12493dbf3e00}	{Interface_Name}
+; Interface 	(IID)		= HKEY_CLASSES_ROOT\Interface\{891f75f2-1423-30b1-af08-824e35f16fca}	_{IID}
+; Library 		(LIBID)		= HKEY_CLASSES_ROOT\TypeLib\{107a0a4b-1bea-4551-9011-2bf1bd9c93e3}		GUID
+; Programmatic  (ProgID)	= HKEY_CLASSES_ROOT\{Name_Prog}.{IID}
+
+[HKEY_CLASSES_ROOT\CLSID\{3A3F738D-238F-3A8A-82B6-D5BDCDF4DDB1}]
+@="GProperties.CProperties"
+
+[HKEY_CLASSES_ROOT\CLSID\{3A3F738D-238F-3A8A-82B6-D5BDCDF4DDB1}]
+@="{Name_Prog}.{IID}"
+
+[HKEY_CLASSES_ROOT\CLSID\{3A3F738D-238F-3A8A-82B6-D5BDCDF4DDB1}\Implemented Categories]
+
+[HKEY_CLASSES_ROOT\CLSID\{3A3F738D-238F-3A8A-82B6-D5BDCDF4DDB1}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}]
+
+[HKEY_CLASSES_ROOT\CLSID\{3A3F738D-238F-3A8A-82B6-D5BDCDF4DDB1}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="{Name_Prog}.{IID}"
+"Assembly"="{Name_Prog}, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///D:/Leo Share 192.168.1.48/{Folder_Name}/{Name_Prog}.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{3A3F738D-238F-3A8A-82B6-D5BDCDF4DDB1}\InprocServer32\1.0.0.0]
+"Class"="{Name_Prog}.{IID}"
+"Assembly"="{Name_Prog}, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v4.0.30319"
+"CodeBase"="file:///D:/Leo Share 192.168.1.48/{Folder_Name}/{Name_Prog}.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{3A3F738D-238F-3A8A-82B6-D5BDCDF4DDB1}\ProgId]
+@="{Name_Prog}.{IID}"
+
+;********************************************************************************************
+
+; Interface =  {Interface_Name}
+[HKEY_CLASSES_ROOT\Interface\{1C548269-A209-3239-9685-12493DBF3E00}]
+@="{Interface_Name}"	; IDispatch
+
+[HKEY_CLASSES_ROOT\Interface\{1C548269-A209-3239-9685-12493DBF3E00}\ProxyStubClsid32]
+@="{00020424-0000-0000-C000-000000000046}"
+
+[HKEY_CLASSES_ROOT\Interface\{1C548269-A209-3239-9685-12493DBF3E00}\TypeLib]
+@="{107A0A4B-1BEA-4551-9011-2BF1BD9C93E3}"	;GUID
+"Version"="1.0"
+
+; TypeLib = {Interface_Name}
+[HKEY_CLASSES_ROOT\TypeLib\{107A0A4B-1BEA-4551-9011-2BF1BD9C93E3}\1.0]
+@="{Name_Prog}"	; namespace
+
+[HKEY_CLASSES_ROOT\TypeLib\{107A0A4B-1BEA-4551-9011-2BF1BD9C93E3}\1.0\0\win32]
+@="D:\\Leo Share 192.168.1.48\\{Folder_Name}\\{Name_Prog}.tlb"	; path file *.tlb
+
+[HKEY_CLASSES_ROOT\TypeLib\{107A0A4B-1BEA-4551-9011-2BF1BD9C93E3}\1.0\FLAGS]
+@="0"
+
+[HKEY_CLASSES_ROOT\TypeLib\{107A0A4B-1BEA-4551-9011-2BF1BD9C93E3}\1.0\HELPDIR]
+@="D:\\Leo Share 192.168.1.48\\{Folder_Name}"		; root directory
+
+;********************************************************************************************
+
+; Interface =  _{IID}
+[HKEY_CLASSES_ROOT\Interface\{891F75F2-1423-30B1-AF08-824E35F16FCA}]
+@="_{IID}"	; IDispatch
+
+[HKEY_CLASSES_ROOT\Interface\{891F75F2-1423-30B1-AF08-824E35F16FCA}\ProxyStubClsid32]
+@="{00020424-0000-0000-C000-000000000046}"
+
+[HKEY_CLASSES_ROOT\Interface\{891F75F2-1423-30B1-AF08-824E35F16FCA}\TypeLib]
+@="{107A0A4B-1BEA-4551-9011-2BF1BD9C93E3}"
+"Version"="1.0"
+
+;********************************************************************************************
+
+; namespace --> Class
+[HKEY_CLASSES_ROOT\{Name_Prog}.{IID}]
+@="{Name_Prog}.{IID}"
+
+[HKEY_CLASSES_ROOT\{Name_Prog}.{IID}\CLSID]
+@="{3A3F738D-238F-3A8A-82B6-D5BDCDF4DDB1}"
+
+
+
+
+
+
+

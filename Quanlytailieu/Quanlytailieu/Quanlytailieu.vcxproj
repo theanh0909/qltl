@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{59A459AF-0532-4D1D-9113-E5961388B90C}</ProjectGuid>
+    <Keyword>MFCDLLProj</Keyword>
+    <RootNamespace>Quanlyvanban</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\Quanlyvanban.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\Quanlyvanban.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\Quanlytailieu.def</ModuleDefinitionFile>
+      <OutputFile>C:\QLTL GXD\GDocmanager.dll</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\Quanlytailieu.def</ModuleDefinitionFile>
+      <OutputFile>C:\QLTL GXD 64\GDocmanager.dll</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Base64.cpp" />
+    <ClCompile Include="BrowseForFolder.cpp" />
+    <ClCompile Include="BtnST.cpp" />
+    <ClCompile Include="CCheckHyperlinkError.cpp" />
+    <ClCompile Include="CCheckVersion.cpp" />
+    <ClCompile Include="CDownloadFileSever.cpp" />
+    <ClCompile Include="CHelpRibbon.cpp" />
+    <ClCompile Include="CMoveFiles.cpp" />
+    <ClCompile Include="ColorEdit.cpp" />
+    <ClCompile Include="ColumnTreeCtrl.cpp" />
+    <ClCompile Include="ColumnTreeView.cpp" />
+    <ClCompile Include="ColumnTreeWnd.cpp" />
+    <ClCompile Include="ComboBoxExt.cpp" />
+    <ClCompile Include="ComboBoxExtList.cpp" />
+    <ClCompile Include="CQSortData.cpp" />
+    <ClCompile Include="DlgAddFiles.cpp" />
+    <ClCompile Include="DlgAutoRename.cpp" />
+    <ClCompile Include="DlgChangeHyperlink.cpp" />
+    <ClCompile Include="DlgCheckFiles.cpp" />
+    <ClCompile Include="DlgCopyData.cpp" />
+    <ClCompile Include="DlgCreateFroups.cpp" />
+    <ClCompile Include="DlgCreateNewTemp.cpp" />
+    <ClCompile Include="DlgEditProperties.cpp" />
+    <ClCompile Include="DlgInsertRows.cpp" />
+    <ClCompile Include="DlgListUpdate.cpp" />
+    <ClCompile Include="DlgOptionMain.cpp" />
+    <ClCompile Include="DlgRenameFiles.cpp" />
+    <ClCompile Include="CRenameFolders.cpp" />
+    <ClCompile Include="DlgRibbonTimkiem.cpp" />
+    <ClCompile Include="DlgSelectionCells.cpp" />
+    <ClCompile Include="DlgStructureFolder.cpp" />
+    <ClCompile Include="FileFinder.cpp" />
+    <ClCompile Include="FileHelper.cpp" />
+    <ClCompile Include="FileRegister.cpp" />
+    <ClCompile Include="FrmTabAdd.cpp" />
+    <ClCompile Include="FrmTabDelete.cpp" />
+    <ClCompile Include="FrmTabKhac.cpp" />
+    <ClCompile Include="FrmTabReplace.cpp" />
+    <ClCompile Include="FrmTabSTT.cpp" />
+    <ClCompile Include="Function.cpp" />
+    <ClCompile Include="ListCtrlEx.cpp" />
+    <ClCompile Include="MenuIcon.cpp" />
+    <ClCompile Include="MsgHook.cpp" />
+    <ClCompile Include="NumSpinCtrl.cpp" />
+    <ClCompile Include="Path.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PictureCtrl.cpp" />
+    <ClCompile Include="Quanlytailieu.cpp" />
+    <ClCompile Include="CReadFileCSV.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="SplitterControl.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="SysImageList.cpp" />
+    <ClCompile Include="TaskbarNotifier.cpp" />
+    <ClCompile Include="TextProgressCtrl.cpp" />
+    <ClCompile Include="ThemeHelperST.cpp" />
+    <ClCompile Include="Util.cpp" />
+    <ClCompile Include="XPStyleButtonST.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Images\add.ico" />
+    <None Include="..\Images\addlist.ico" />
+    <None Include="..\Images\addlist2.ico" />
+    <None Include="..\Images\add_file2.ico" />
+    <None Include="..\Images\arrow.ico" />
+    <None Include="..\Images\broom.ico" />
+    <None Include="..\Images\check.ico" />
+    <None Include="..\Images\close.ico" />
+    <None Include="..\Images\compare.ico" />
+    <None Include="..\Images\copy.ico" />
+    <None Include="..\Images\data_transfer.ico" />
+    <None Include="..\Images\delete.ico" />
+    <None Include="..\Images\down_button.ico" />
+    <None Include="..\Images\down_squared.ico" />
+    <None Include="..\Images\dutoan.ico" />
+    <None Include="..\Images\file_null.ico" />
+    <None Include="..\Images\flow_chart.ico" />
+    <None Include="..\Images\folder_tree.ico" />
+    <None Include="..\Images\gear.ico" />
+    <None Include="..\Images\Hand.cur" />
+    <None Include="..\Images\icons8_checkmark.ico" />
+    <None Include="..\Images\icons8_copy_to_clipboard.ico" />
+    <None Include="..\Images\icons8_edit_property.ico" />
+    <None Include="..\Images\icons8_file.ico" />
+    <None Include="..\Images\icons8_synchronize.ico" />
+    <None Include="..\Images\move.ico" />
+    <None Include="..\Images\newfile.ico" />
+    <None Include="..\Images\notifier.bmp" />
+    <None Include="..\Images\opened_folder.ico" />
+    <None Include="..\Images\open_book.ico" />
+    <None Include="..\Images\pause.ico" />
+    <None Include="..\Images\question.ico" />
+    <None Include="..\Images\redo.ico" />
+    <None Include="..\Images\rename.ico" />
+    <None Include="..\Images\renamefile.ico" />
+    <None Include="..\Images\save_all.ico" />
+    <None Include="..\Images\search.ico" />
+    <None Include="..\Images\send_back.ico" />
+    <None Include="..\Images\send_mail.ico" />
+    <None Include="..\Images\shortcut.ico" />
+    <None Include="..\Images\slide_up.ico" />
+    <None Include="..\Images\support.ico" />
+    <None Include="..\Images\todolist.ico" />
+    <None Include="..\Images\tree_structure.ico" />
+    <None Include="..\Images\undo.ico" />
+    <None Include="..\Images\updates.ico" />
+    <None Include="..\Images\up_squared.ico" />
+    <None Include="icon1.ico" />
+    <None Include="Quanlytailieu.def" />
+    <None Include="res\Quanlytailieu.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base64.h" />
+    <ClInclude Include="BrowseForFolder.h" />
+    <ClInclude Include="BtnST.h" />
+    <ClInclude Include="CCheckHyperlinkError.h" />
+    <ClInclude Include="CCheckVersion.h" />
+    <ClInclude Include="CDownloadFileSever.h" />
+    <ClInclude Include="CHelpRibbon.h" />
+    <ClInclude Include="CMemDCEx.h" />
+    <ClInclude Include="CMoveFiles.h" />
+    <ClInclude Include="ColorEdit.h" />
+    <ClInclude Include="ColumnTreeCtrl.h" />
+    <ClInclude Include="ColumnTreeView.h" />
+    <ClInclude Include="ColumnTreeWnd.h" />
+    <ClInclude Include="ComboBoxExt.h" />
+    <ClInclude Include="ComboBoxExtList.h" />
+    <ClInclude Include="CQSortData.h" />
+    <ClInclude Include="Define.h" />
+    <ClInclude Include="DlgAddFiles.h" />
+    <ClInclude Include="DlgAutoRename.h" />
+    <ClInclude Include="DlgChangeHyperlink.h" />
+    <ClInclude Include="DlgCheckFiles.h" />
+    <ClInclude Include="DlgCopyData.h" />
+    <ClInclude Include="DlgCreateFroups.h" />
+    <ClInclude Include="DlgCreateNewTemp.h" />
+    <ClInclude Include="DlgEditProperties.h" />
+    <ClInclude Include="DlgInsertRows.h" />
+    <ClInclude Include="DlgListUpdate.h" />
+    <ClInclude Include="DlgOptionMain.h" />
+    <ClInclude Include="DlgRenameFiles.h" />
+    <ClInclude Include="CRenameFolders.h" />
+    <ClInclude Include="DlgRibbonTimkiem.h" />
+    <ClInclude Include="DlgSelectionCells.h" />
+    <ClInclude Include="DlgStructureFolder.h" />
+    <ClInclude Include="EasySize.h" />
+    <ClInclude Include="FileFilter.h" />
+    <ClInclude Include="FileFinder.h" />
+    <ClInclude Include="FileHelper.h" />
+    <ClInclude Include="FileRegister.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="FrmTabAdd.h" />
+    <ClInclude Include="FrmTabDelete.h" />
+    <ClInclude Include="FrmTabKhac.h" />
+    <ClInclude Include="FrmTabReplace.h" />
+    <ClInclude Include="FrmTabSTT.h" />
+    <ClInclude Include="Function.h" />
+    <ClInclude Include="ListCtrlEx.h" />
+    <ClInclude Include="MenuIcon.h" />
+    <ClInclude Include="MsgHook.h" />
+    <ClInclude Include="msolib.h" />
+    <ClInclude Include="NumSpinCtrl.h" />
+    <ClInclude Include="Path.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="PictureCtrl.h" />
+    <ClInclude Include="Quanlytailieu.h" />
+    <ClInclude Include="CReadFileCSV.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SplitterControl.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="SysImageList.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TaskbarNotifier.h" />
+    <ClInclude Include="TextProgressCtrl.h" />
+    <ClInclude Include="ThemeHelperST.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="XPStyleButtonST.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Quanlytailieu.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
