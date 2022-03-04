@@ -23,6 +23,7 @@
 #define shConfig				L"shConfig"
 #define shCategory				L"shCategory"
 #define shFManager				L"shFManager"
+#define shQuanlyHS				L"shQuanlyHS"
 #define shCopy					L"shCopy"
 #define shFile					L"shFile"
 #define shTieuchuan				L"shTieuchuan"

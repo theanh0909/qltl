@@ -43,7 +43,7 @@ END_MESSAGE_MAP()
 
 CQuanlytailieuApp::CQuanlytailieuApp()
 {
-	
+
 }
 
 CQuanlytailieuApp::~CQuanlytailieuApp()
@@ -83,7 +83,7 @@ void __stdcall CallCreateNewSheet()
 	if (!bCheckVersion) return;
 	if (!blCheckFileTemp()) return;
 
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_xlGetInfoSheetActive();
 
 	xl->EnableCancelKey = XlEnableCancelKey(FALSE);
@@ -99,7 +99,7 @@ void __stdcall CallCreateDirStructure()
 	if (!bCheckVersion) return;
 	if (!blCheckFileTemp()) return;
 
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_xlGetInfoSheetActive();
 
 	xl->EnableCancelKey = XlEnableCancelKey(FALSE);
@@ -107,89 +107,89 @@ void __stdcall CallCreateDirStructure()
 	DlgStructureFolder p;
 	p.DoModal();
 
-	delete ff;	
+	delete ff;
 }
 
 void __stdcall CallFontUpper()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
 
 void __stdcall CallFontLower()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
 
 void __stdcall CallFontProper()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
 
 void __stdcall CallFontUppro()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
 
 void __stdcall CallFontUnsigned()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
 
 void __stdcall CallFontReverse()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
 
 void __stdcall CallQManaSheet()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
 
 void __stdcall CallQAutoSheet()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
 
 void __stdcall CallQAutoFilter()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
 
 void __stdcall CallQFreezePanes()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
 
 void __stdcall CallQViewFormula()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
 
 void __stdcall CallQFocus()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
@@ -199,7 +199,7 @@ void __stdcall CallFuncUpdateFiles(bool blUpdate)
 	if (!bCheckVersion) return;
 	if (!blCheckFileTemp()) return;
 
-	Function *ff = new Function;
+	Function* ff = new Function;
 
 	sCodeActive = shCategory;
 	sNameActive = (LPCTSTR)ff->_xlGetNameSheet((_bstr_t)sCodeActive, 1);
@@ -234,7 +234,7 @@ void __stdcall CallFuncAddFiles()
 		if (!bCheckVersion) return;
 		if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
 		ff->_RegistryCOMGpro();
 		ff->_xlGetInfoSheetActive();
 		ff->_DefaultSheetActive(shFManager);
@@ -252,31 +252,36 @@ void __stdcall CallFuncAddFiles()
 
 void __stdcall CallFuncCopyData()
 {
-	if (!bCheckVersion) return;
-	if (!blCheckFileTemp()) return;
+		Function* ff = new Function;
+	try {
+		//if (!bCheckVersion) return;
+		//if (!blCheckFileTemp()) return;
+		ff->_xlCreateExcel(1);
+		ff->_xlGetInfoSheetActive();
 
-	Function *ff = new Function;
-	ff->_xlGetInfoSheetActive();
-	ff->_DefaultSheetActive(shCategory);
+		ff->_DefaultSheetActive(shCategory);
+		DlgCopyData p;
+		p._LoadAllCategory();
 
-	DlgCopyData p;
-	p._LoadAllCategory();
-
-	delete ff;
+		delete ff;
+	}
+	catch (_com_error e) {
+		ff->_msgbox(e.ErrorMessage(), 0, 0);
+	}
 }
 
 void __stdcall CallFuncCheckFiles()
 {
+		Function* ff = new Function;
 	try
 	{
-		if (!bCheckVersion) return;
-		if (!blCheckFileTemp()) return;
-
-		Function *ff = new Function;
+		//if (!bCheckVersion) return;
+		//if (!blCheckFileTemp()) return;
+		ff->_xlCreateExcel(0);
 		ff->_RegistryCOMGpro();
 		ff->_xlGetInfoSheetActive();
-		ff->_DefaultSheetActive(shFManager);
-
+		//ff->_DefaultSheetActive(shFManager); //cho quan ly tai liêu
+		ff->_DefaultSheetActive(shQuanlyHS);// cho qlcl 
 		int nResult = ff->_xlGetAllCellSelection(0, 1);
 		if (nResult > 0)
 		{
@@ -296,23 +301,26 @@ void __stdcall CallFuncCheckFiles()
 
 		delete ff;
 	}
-	catch (...) {}
+	catch (_com_error e) {
+		ff->_msgbox(e.ErrorMessage(), 0, 0);
+	}
 }
 
 void __stdcall CallFuncQuickSort()
 {
 	try
 	{
-		if (!bCheckVersion) return;
-		if (!blCheckFileTemp()) return;
+		//if (!bCheckVersion) return;
+		//if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
+		ff->_xlCreateExcel(1);
 		ff->_xlGetInfoSheetActive();
 
 		CString szFile = shFile;
 		if (sCodeActive == shFManager || sCodeActive.Left(szFile.GetLength()) == szFile)
 		{
-			CQSortData *p = new CQSortData;
+			CQSortData* p = new CQSortData;
 			p->_SapxepTatcaDulieu();
 			delete p;
 		}
@@ -327,10 +335,10 @@ void __stdcall CallFuncRenameFiles()
 {
 	try
 	{
-		if (!bCheckVersion) return;
-		if (!blCheckFileTemp()) return;
-
-		Function *ff = new Function;
+		//if (!bCheckVersion) return;
+		//if (!blCheckFileTemp()) return;
+		Function* ff = new Function;
+		ff->_xlCreateExcel(1);
 		ff->_xlGetInfoSheetActive();
 		ff->_DefaultSheetActive(shFManager);
 
@@ -347,7 +355,7 @@ void __stdcall CallFuncRenameFiles()
 			if (iSelect >= 0)
 			{
 				DlgRenameFiles pr;
-				if(iSelect > 0 || nResult > 1) pr._GetDanhsachFiles(iSelect);
+				if (iSelect > 0 || nResult > 1) pr._GetDanhsachFiles(iSelect);
 				else pr._RightClickRenameFiles(0);
 			}
 		}
@@ -361,14 +369,15 @@ void __stdcall CallFuncRenameFolders()
 {
 	try
 	{
-		if (!bCheckVersion) return;
-		if (!blCheckFileTemp()) return;
+		//if (!bCheckVersion) return;
+		//if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
+		ff->_xlCreateExcel(1);
 		ff->_xlGetInfoSheetActive();
 		ff->_DefaultSheetActive(shFManager);
 
-		CRenameFolders *p = new CRenameFolders;
+		CRenameFolders* p = new CRenameFolders;
 		p->_GetDanhsachFolders();
 		delete p;
 
@@ -379,12 +388,13 @@ void __stdcall CallFuncRenameFolders()
 
 void __stdcall CallFuncAutoRename()
 {
+	Function* ff = new Function;
 	try
 	{
-		if (!bCheckVersion) return;
-		if (!blCheckFileTemp()) return;
-
-		Function *ff = new Function;
+		//if (!bCheckVersion) return;
+		//if (!blCheckFileTemp()) return;
+		CoInitialize(NULL);
+		xl.GetActiveObject(ExcelApp);
 
 		xl->EnableCancelKey = XlEnableCancelKey(FALSE);
 		AFX_MANAGE_STATE(AfxGetStaticModuleState());
@@ -393,17 +403,20 @@ void __stdcall CallFuncAutoRename()
 
 		delete ff;
 	}
-	catch (...) {}
+	catch (_com_error e) {
+		ff->_msgbox(e.ErrorMessage(), 0, 0);
+	}
 }
 
 void __stdcall CallFuncCheckHyperlink()
 {
 	try
 	{
-		if (!bCheckVersion) return;
-		if (!blCheckFileTemp()) return;
+		//if (!bCheckVersion) return;
+		//if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
+		ff->_xlCreateExcel(1);
 		ff->_xlGetInfoSheetActive();
 
 		CString szCopy = shCopy, szFile = shFile;
@@ -411,7 +424,7 @@ void __stdcall CallFuncCheckHyperlink()
 			|| sCodeActive.Left(szCopy.GetLength()) == szCopy
 			|| sCodeActive.Left(szFile.GetLength()) == szFile)
 		{
-			CCheckHyperlinkError *p = new CCheckHyperlinkError;
+			CCheckHyperlinkError* p = new CCheckHyperlinkError;
 			p->_KiemtraLienketError();
 			delete p;
 		}
@@ -424,17 +437,17 @@ void __stdcall CallFuncCheckHyperlink()
 
 void __stdcall CallFuncChangeHyperlink()
 {
+		Function* ff = new Function;
 	try
 	{
-		if (!bCheckVersion) return;
-		if (!blCheckFileTemp()) return;
-
-		Function *ff = new Function;
+		//if (!bCheckVersion) return;
+		//if (!blCheckFileTemp()) return;
+		ff->_xlCreateExcel(1);
 		ff->_xlGetInfoSheetActive();
 
 		CString szCopy = shCopy, szFile = shFile;
 		CString szCode = (LPCTSTR)pShActive->CodeName;
-		if (szCode == shCategory || szCode == shFManager
+		if (szCode == shCategory || szCode == shQuanlyHS //|| szCode == shFManager
 			|| szCode.Left(szCopy.GetLength()) == szCopy
 			|| szCode.Left(szFile.GetLength()) == szFile
 			|| szCode == shTieuchuan)
@@ -443,11 +456,13 @@ void __stdcall CallFuncChangeHyperlink()
 			AFX_MANAGE_STATE(AfxGetStaticModuleState());
 			DlgChangeHyperlink p;
 			p.DoModal();
-		}	
+		}
 
 		delete ff;
 	}
-	catch (...) {}
+	catch (_com_error e) {
+		ff->_msgbox(e.ErrorMessage(), 0, 0);
+	}
 }
 
 void __stdcall CallOnChangeFuncTimkiem()
@@ -456,8 +471,8 @@ void __stdcall CallOnChangeFuncTimkiem()
 	{
 		if (!bCheckVersion) return;
 		if (!blCheckFileTemp()) return;
-		
-		Function *ff = new Function;
+
+		Function* ff = new Function;
 		ff->_xlGetInfoSheetActive();
 
 		DlgRibbonTimkiem p;
@@ -477,10 +492,11 @@ void __stdcall CallUtilCreateGroups()
 {
 	try
 	{
-		if (!bCheckVersion) return;
-		if (!blCheckFileTemp()) return;
+		//if (!bCheckVersion) return;
+		//if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
+		ff->_xlCreateExcel(1);
 		ff->_xlGetInfoSheetActive();
 		ff->_DefaultSheetActive(shFManager);
 
@@ -496,10 +512,10 @@ void __stdcall CallUtilEditProperties()
 {
 	try
 	{
-		if (!bCheckVersion) return;
-		if (!blCheckFileTemp()) return;
-
-		Function *ff = new Function;
+		//if (!bCheckVersion) return;
+		//if (!blCheckFileTemp()) return;
+		Function* ff = new Function;
+		ff->_xlCreateExcel(1);
 		ff->_RegistryCOMGpro();
 		ff->_xlGetInfoSheetActive();
 		ff->_DefaultSheetActive(shFManager);
@@ -529,7 +545,7 @@ void __stdcall CallUtilEditProperties()
 void __stdcall CallHelpUM()
 {
 	if (!blCheckFileTemp()) return;
-	CHelpRibbon *p = new CHelpRibbon;
+	CHelpRibbon* p = new CHelpRibbon;
 	p->_HelpUM();
 	delete p;
 }
@@ -537,7 +553,7 @@ void __stdcall CallHelpUM()
 void __stdcall CallHelpFAQ()
 {
 	if (!blCheckFileTemp()) return;
-	CHelpRibbon *p = new CHelpRibbon;
+	CHelpRibbon* p = new CHelpRibbon;
 	p->_HelpFAQ();
 	delete p;
 }
@@ -545,7 +561,7 @@ void __stdcall CallHelpFAQ()
 void __stdcall CallHelpVideo()
 {
 	if (!blCheckFileTemp()) return;
-	CHelpRibbon *p = new CHelpRibbon;
+	CHelpRibbon* p = new CHelpRibbon;
 	p->_HelpVideo();
 	delete p;
 }
@@ -553,7 +569,7 @@ void __stdcall CallHelpVideo()
 void __stdcall CallHelpForum()
 {
 	if (!blCheckFileTemp()) return;
-	CHelpRibbon *p = new CHelpRibbon;
+	CHelpRibbon* p = new CHelpRibbon;
 	p->_HelpForum();
 	delete p;
 }
@@ -561,7 +577,7 @@ void __stdcall CallHelpForum()
 void __stdcall CallHelpSoft()
 {
 	if (!blCheckFileTemp()) return;
-	CHelpRibbon *p = new CHelpRibbon;
+	CHelpRibbon* p = new CHelpRibbon;
 	p->_HelpSoft();
 	delete p;
 }
@@ -569,7 +585,7 @@ void __stdcall CallHelpSoft()
 void __stdcall CallHelpSupport()
 {
 	if (!blCheckFileTemp()) return;
-	CHelpRibbon *p = new CHelpRibbon;
+	CHelpRibbon* p = new CHelpRibbon;
 	p->_HelpSupport();
 	delete p;
 }
@@ -577,7 +593,7 @@ void __stdcall CallHelpSupport()
 void __stdcall CallHelpFeedback()
 {
 	if (!blCheckFileTemp()) return;
-	CHelpRibbon *p = new CHelpRibbon;
+	CHelpRibbon* p = new CHelpRibbon;
 	p->_HelpFeedback();
 	delete p;
 }
@@ -589,8 +605,8 @@ void __stdcall CallNewCheckVersion()
 		if (!bCheckVersion) return;
 		if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
-		CCheckVersion *ck = new CCheckVersion;
+		Function* ff = new Function;
+		CCheckVersion* ck = new CCheckVersion;
 		int iCheckUp = ck->_CompareVersion(1);
 		if (iCheckUp != 1)
 		{
@@ -601,8 +617,8 @@ void __stdcall CallNewCheckVersion()
 		if (iCheckUp == 1)
 		{
 
-			Base64Ex *bb = new Base64Ex;
-			CRegistry *reg = new CRegistry;
+			Base64Ex* bb = new Base64Ex;
+			CRegistry* reg = new CRegistry;
 
 			CString szCreate = bb->BaseDecodeEx(CreateKeySettings) + UpldateSoft;
 			reg->CreateKey(szCreate);
@@ -643,7 +659,7 @@ void __stdcall CallInsertRow()
 		if (!bCheckVersion) return;
 		if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
 		ff->_xlGetInfoSheetActive();
 
 		xl->EnableCancelKey = XlEnableCancelKey(FALSE);
@@ -674,7 +690,7 @@ void __stdcall CallAutoNumber()
 		if (!bCheckVersion) return;
 		if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
 		ff->_xlGetInfoSheetActive();
 
 		CString szCopy = shCopy, szFile = shFile;
@@ -733,7 +749,7 @@ void __stdcall CallRenameFiles()
 		if (!bCheckVersion) return;
 		if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
 		ff->_RegistryCOMGpro();
 		ff->_xlGetInfoSheetActive();
 		ff->_DefaultSheetActive(shFManager);
@@ -749,7 +765,7 @@ void __stdcall CallRenameFiles()
 
 void __stdcall CallCopyFiles()
 {
-	Function *ff = new Function;
+	Function* ff = new Function;
 	ff->_msgupdate();
 	delete ff;
 }
@@ -761,13 +777,13 @@ void __stdcall CallMoveFiles()
 		if (!bCheckVersion) return;
 		if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
 		ff->_xlGetInfoSheetActive();
 
 		CString szFile = shFile;
 		if (sCodeActive == shFManager || sCodeActive.Left(szFile.GetLength()) == szFile)
 		{
-			CMoveFiles *p = new CMoveFiles;
+			CMoveFiles* p = new CMoveFiles;
 			p->_DichuyenDulieu();
 			delete p;
 		}
@@ -785,7 +801,7 @@ void __stdcall CallOpenFile()
 		if (!bCheckVersion) return;
 		if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
 		ff->_xlGetInfoSheetActive();
 
 		// Hàm hỗ trợ mở file đặc biệt
@@ -803,7 +819,7 @@ void __stdcall CallOpenFolder()
 		if (!bCheckVersion) return;
 		if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
 		ff->_xlGetInfoSheetActive();
 
 		// Hàm hỗ trợ mở thư mục đặc biệt
@@ -821,7 +837,7 @@ void __stdcall CallDeleteFiles()
 		if (!bCheckVersion) return;
 		if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
 		ff->_xlGetInfoSheetActive();
 
 		CString szCopy = shCopy, szFile = shFile;
@@ -901,7 +917,7 @@ void __stdcall CallDeleteFiles()
 							PRS->EntireRow->Delete(xlShiftUp);
 							DeleteFile(vecHyper[0]);
 						}
-						vecHyper.clear();						
+						vecHyper.clear();
 					}
 
 					PRS = pRgActive->GetItem(iRowActive, iColumnActive);
@@ -910,7 +926,7 @@ void __stdcall CallDeleteFiles()
 					ff->_xlPutScreenUpdating(true);
 
 					CallAutoNumber();
-				}								
+				}
 			}
 			else
 			{
@@ -975,7 +991,7 @@ void __stdcall DLLStart()
 
 		if (!blCheckFileTemp()) return;
 
-		Function *ff = new Function;
+		Function* ff = new Function;
 		ff->_xlDeveloperMacroSettings();
 
 		//Tạm thời bỏ qua bCheckVersion --> Không check phiên bản
@@ -992,9 +1008,9 @@ void __stdcall DLLStart()
 				ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS,
 				DEFAULT_QUALITY, FIXED_PITCH | FF_MODERN, L"Arial");
 
-			Base64Ex *bb = new Base64Ex;
-			CRegistry *reg = new CRegistry;
-			CCheckVersion *ck = new CCheckVersion;
+			Base64Ex* bb = new Base64Ex;
+			CRegistry* reg = new CRegistry;
+			CCheckVersion* ck = new CCheckVersion;
 
 			// Gọi và luôn sử dụng Dll GHook keyboard + mouse trong suốt quá trình làm việc (bl = false)
 			ff->_xlCallFunctionDLL(L"GHook.dll", L"DLLStartHook", false);
@@ -1013,7 +1029,7 @@ void __stdcall DLLStart()
 				szOffice = L"32";
 				reg->WriteChar("OperatingSystem", "32");
 			}
-			
+
 			CString szval = ff->_xlGetVersionExcel();
 			reg->WriteChar("OfficeVersion", ff->_ConvertCstringToChars(szval));
 
@@ -1058,7 +1074,7 @@ void __stdcall DLLStart()
 	}
 	catch (...) {
 		MessageBox(NULL, L"Có thể ứng dụng Excel chưa được tắt hoàn toàn. Bạn chuột phải vào thanh TaskBar "
-			L"/ chọn Task Manager và tìm đến ứng dụng Microsoft Excel để tắt hoàn toàn (End task).", 
+			L"/ chọn Task Manager và tìm đến ứng dụng Microsoft Excel để tắt hoàn toàn (End task).",
 			L"Lỗi ứng dụng", MB_OK | MB_ICONERROR);
 	}
 }
