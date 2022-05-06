@@ -80,10 +80,9 @@ void __stdcall CallOptionMain()
 
 void __stdcall CallCreateNewSheet()
 {
+	Function* ff = new Function;
 	if (!bCheckVersion) return;
 	if (!blCheckFileTemp()) return;
-
-	Function* ff = new Function;
 	ff->_xlGetInfoSheetActive();
 
 	xl->EnableCancelKey = XlEnableCancelKey(FALSE);

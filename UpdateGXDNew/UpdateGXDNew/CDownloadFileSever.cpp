@@ -34,12 +34,16 @@ void CDownloadFileSever::_LoadDecodeBase64()
 	{
 		dbCheckConn = bb->BaseDecodeEx(CHECKCONN);
 		dbSeverMain = bb->BaseDecodeEx(SEVERMAIN);
-
+		
 		CString szVersionSoft = L"";
 		szVersionSoft.Format(L"%02d", _CheckVersionSoftware());
 		
 		dbSeverDir = dbSeverMain + bb->BaseDecodeEx(SEVERNEXT);
-		dbSeverDir.Replace(L"{xx}", szVersionSoft);
+		/*MessageBox(NULL, dbSeverMain,
+			L"Hướng dẫn", NULL);*/
+
+		//dbSeverDir.Replace(L"{xx}", szVersionSoft);
+		dbSeverDir.Replace(L"{xx}", L"");
 		if (dbSeverDir.Right(1) != L"/") dbSeverDir += L"/";
 
 		dbSeverData = dbSeverMain + bb->BaseDecodeEx(SEVERDATA);

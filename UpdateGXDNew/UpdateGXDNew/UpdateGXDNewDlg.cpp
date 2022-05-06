@@ -13,10 +13,12 @@
 #define FileAppRun				L"QLDAGXD.exe"
 #define FILENAMEDLL				L"GDocmanager.dll"
 #define ExcelApp				L"Excel.Application"
-
+#define FileVerNew				L"newver.ini"
 #define FileHelp				L"help.ini"
 #define FileVersion				L"version.ini"
-#define FileLogUpdate			L"LogUpdate.txt"
+//#define FileLogUpdate			L"LogUpdate1.txt"
+#define FileLogUpdate			L"thongtincapnhat.ini"
+
 #define FileListUpdate			L"UpdateFiles"
 
 //#define CreateKeySettings		L"WUZkVFJ4VFpYUjBhVzVuYzF4VgR=DJTV=VPOVYTbKlBZSFJURlhFZFlSRXBUUTFGVHg9UlFF"
@@ -244,9 +246,38 @@ void CUpdateGXDNewDlg::OnBnClickedButtonOk()
 
 		if (szOffice != L"")
 		{
-			CString szFileSaved = pathFolder + FileListUpdate + szOffice + L".txt";
-			if (sv->_DownloadFile(sv->dbSeverDir + FileListUpdate + szOffice + L".txt", szFileSaved))
+			vector<CString> vecLine;
+			CString szVerUp = L"1.0.0";
+			
+			CString szFileSaved = pathFolder + FileVerNew;
+
+			if (sv->_DownloadFile(sv->dbSeverDir + FileVerNew, szFileSaved))
 			{
+				vecLine.clear();
+				int ncount = _ReadMultiUnicode(szFileSaved, vecLine);
+				if (ncount > 0)
+				{
+					for (int i = ncount - 1; i >= 0; i--)
+					{
+						vecLine[i].Trim();
+						if (vecLine[i] == L"" || vecLine[i].Left(2) == L"//") vecLine.erase(vecLine.begin() + i);
+					}
+				}
+
+				ncount = (int)vecLine.size();
+				if (ncount >= 5) szVerUp = vecLine[5];
+			}
+			DeleteFile(szFileSaved);
+
+			szFileSaved = pathFolder + FileListUpdate + szOffice + L".txt";
+			/*MessageBox(sv->dbSeverDir + szVerUp + L"/" + FileListUpdate + szOffice + L".txt",
+				L"Hướng dẫn", MB_OK | MB_ICONINFORMATION);
+			
+			MessageBox(sv->dbSeverMain,
+				L"Hướng dẫn", MB_OK | MB_ICONINFORMATION);*/
+			if (sv->_DownloadFile(sv->dbSeverDir + szVerUp + L"/" +  FileListUpdate + szOffice + L".txt", szFileSaved))
+			{
+				//return;
 				vector<CString> vecLine;
 				int nTotal = _ReadMultiUnicode(szFileSaved, vecLine);
 				if (nTotal > 0)
@@ -263,8 +294,9 @@ void CUpdateGXDNewDlg::OnBnClickedButtonOk()
 					m_txt_noidung.SetSel(-1);
 
 					int pos = -1;
-					int iLenDir = sv->dbSeverDir.GetLength();
-
+					//int iLenDir = sv->dbSeverDir.GetLength();
+					int iLenDir = (sv->dbSeverDir + szVerUp + L"/").GetLength();
+					
 					CString szval = L"";
 					CString szFull = L"", szDownload = L"", szNext = L"", szNewFile = L"";
 
@@ -273,6 +305,7 @@ void CUpdateGXDNewDlg::OnBnClickedButtonOk()
 						if (vecLine[i] != L"")
 						{
 							szFull = sv->dbSeverMain + vecLine[i];
+							
 							pos = szFull.Find(L"|");
 							if (pos > 0) szFull = szFull.Left(pos);
 							szFull.Trim();
@@ -288,7 +321,8 @@ void CUpdateGXDNewDlg::OnBnClickedButtonOk()
 							if (szNext.Left(1) == L"\\") szNext = szNext.Right(szNext.GetLength() - 1);
 							_CreateDirectories(pathFolder + _GetNameOfPath(szNext, 1));
 							szDownload = pathFolder + szNext;
-
+							//MessageBox(szDownload,
+							//	L"Hướng dẫn", MB_OK | MB_ICONINFORMATION);
 							sv->_DownloadFile(szFull, szDownload);
 						}
 
@@ -302,7 +336,7 @@ void CUpdateGXDNewDlg::OnBnClickedButtonOk()
 				}
 
 				vecLine.clear();
-				DeleteFile(szFileSaved);
+				//DeleteFile(szFileSaved);
 			}
 
 			_SaveRegistry();
@@ -589,11 +623,12 @@ void CUpdateGXDNewDlg::_LoadLogUpdate()
 					szval += L"\r\n";
 				}
 			}
-
+			
 			vecLine.clear();
 			DeleteFile(szFileSaved);
 			m_txt_noidung.SetWindowText(szval);
 		}
+
 	}
 	catch (...) {}
 }
@@ -644,8 +679,10 @@ void CUpdateGXDNewDlg::_SaveRegistry()
 {
 	try
 	{
+		
 		if ((int)m_check_skipup.IsWindowVisible() == 1)
 		{
+		
 			if (iCheckUpSoft != -1)
 			{
 				CString szCreate = bb->BaseDecodeEx(CreateKeySettings) + UpldateSoft;
